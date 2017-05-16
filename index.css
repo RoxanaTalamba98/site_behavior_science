@@ -1,0 +1,686 @@
+
+.title center{
+    padding-top:-50px;
+}
+
+html, body{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	font-family:Verdana,Arial,sans-serif;
+}
+.center{
+	display:table;
+	margin:0 auto;
+}
+/* --------------------- navigation ---------------------------*/
+.cf:before, .cf:after {
+	content:"";
+	display:table;
+}
+
+.cf:after {
+	clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+	zoom:1;
+}
+/*horizontal menu styles*/	
+nav {
+     
+	background: #fcb128;
+	height: 2.4em;
+}
+.b0line{
+	height:0.3em;
+	width:100%;
+	background-color:#fcb128;
+    margin:0;
+}
+nav ul, li {
+    
+	margin: 0;
+	padding: 0;
+    padding-bottom:0.4em;
+    padding-top:0.2em;
+	list-style: none;
+	float: right;
+}
+nav ul {
+    padding-right: 3em;
+	background: #333;
+	height: 2.5em;
+	width: 100%;
+    position: fixed;
+}
+nav li {
+	position: relative;
+    
+}
+nav li a {
+	display: block;
+	line-height: 2em;
+	padding: 0 1.5em;
+	color: white;
+	text-decoration: none;
+    font-size: 1.1em;
+}
+nav li a:hover, .topmenu li:hover > a {
+	background: #fcb128;
+	height: 2.1em;
+	padding-top: .4em;
+	position: relative;
+	top: -.4em;
+	border-radius: .2em .2em 0 0;
+    transition:background-color 0.3s ease;
+    
+}
+nav .current, a:hover.current, .topmenu li:hover a.current {
+	background: #6b6b6b;
+	color: #eee;
+	padding-top: .4em;
+	border-radius: .3em .3em 0 0;
+	position: relative;
+	top: -.3em;
+	border-bottom: .3em solid #fcb128;
+	cursor: default;
+    transition:background-color 0.5s ease;
+}
+/*dropdown menu styles*/
+nav ul.submenu {
+	float: none;
+	background: #fcb128;
+	
+	height: auto;
+	position: absolute;
+	top: 2.5em;
+	left: -9000em;
+	max-height: 0;
+	-moz-transition:max-height 1s ease-in-out;
+	-webkit-transition:max-height 1s ease-in-out;
+	-o-transition:max-height 1s ease-in-out;
+	transition:max-height 1s ease-in-out;
+	overflow: hidden;
+    
+}
+nav ul.submenu li {
+	float: none;
+    width: 8em;
+    margin: 0;
+}
+nav .topmenu li:hover ul {
+	left: 0;
+	max-height: 30em;
+}
+nav ul.submenu li a {
+	border-bottom: 1px solid white;
+    border-width:
+	padding: .2em 1em;
+	white-space: nowrap;
+ 
+}
+nav ul.submenu li:last-child a {
+	border-bottom: none;
+}
+nav ul.submenu li a:hover {
+	background: #fcb128;
+	height: 3em;
+	padding-top: 0em;
+	top: 0;
+	border-radius: 0;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #37b3b7;
+    color: white;
+    padding: 7px 19px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family:Calibri;
+    font-size: 1.2em;
+    margin-right: 1em;
+}
+.buton3{
+   background-color: #46bec2;
+    color: white;
+    margin-top: 1em;
+    padding: 13px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family:Calibri;
+    font-size: 1.2em;
+    
+}
+
+button:hover {
+    background-color: #35a9ad;
+    transition:background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 20%;
+}
+
+.container {
+    padding: 5em;
+}
+
+span.psw {
+    float: right;
+    padding-top: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+/* --------------------- navigation ---------------------------*/
+/* --------------------  first box  ----------------------------*/
+
+.imagebackground{
+background:url(materiale/fundal1prim.jpg);
+vertical-align: top 
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center; 
+background-size: cover;
+width:100%;
+height:100%;  
+}
+.logo sus{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
+}
+.logo{
+	padding-top:15em;
+	padding-bottom:10em;
+}
+.title{
+	font-size:1.2em;
+	color:white;
+	margin-bottom:1em;
+}
+.line{
+	height:0.1em;
+	width:20em;
+	background-color:white;
+	margin-bottom:2em;
+    margin-top: 2em;
+}
+.box1title{
+    font-family:Calibri; font-size:30px; margin-top:4em; margin-bottom:4em;  color:white;
+    text-align: center;
+}
+.box2title{
+    font-family:Calibri; font-size:25px; margin-top:1em; margin-bottom:1em;  color:white;
+    text-align: center;
+}
+.text{
+	font-size:1em;
+	color:white;
+	margin-bottom:2em;
+}
+
+.title center{
+    font-size: 2em;
+}
+
+.title{
+	font-size:1.2em;
+	color:white;
+	margin-bottom:1em;
+}
+
+
+.button1{
+    margin-bottom: 10em;
+	padding:0.6em 1.6em;
+	background-color:#46bec2;
+	color:white;
+	font-size:1.2em;
+	text-decoration:none;
+	transition:background-color 0.5s ease, color 0.5s ease;
+}
+.button1:hover{
+	background-color:white;
+	color:#351b48;
+	transition:background-color 0.5s ease, color 0.5s ease;
+}
+/* --------------------  first box  ----------------------------*/
+
+
+/* --------------------  second box  ----------------------------*/
+.b2div{
+    margin:0 auto;
+    background-color:#46bec2;
+    padding-bottom: 5em;
+    
+    
+}
+.b2titlu{
+    margin:0 auto;
+    font-size: 40px;
+    font-family:Calibri,Verdana,Bell Mt, Roboto;
+    color:white;
+    text-align:center;
+}
+
+.b2div p{
+    padding: 0em 12.5em;
+    padding-top:2em;
+   font-size: 18px;
+    font-family: Bariol,Roboto;
+    color:white;
+    text-align: justify;
+}
+.b2table{
+    margin:0 auto;
+    background-color:#46bec2;
+   
+    text-align:left;
+    color:white;
+   
+}
+
+
+.b2line{
+    height:0.2em;
+	width:10em;
+	background-color:white;
+	margin:1em auto;
+}
+.b2table p{
+    font-size: 18px;
+    font-family: Bariol,Roboto;
+    color:white;}
+
+    
+.b2table td {
+    padding:1em 2em; 
+    font-family: Bariol,Roboto;
+}
+.b2p{
+    padding-bottom: 5em;
+}
+.b2subtitlu{
+    
+   font-size: 25px;
+    font-family:Bariol,Roboto;
+    color:white;
+}
+/* --------------------  second box  ----------------------------*/
+
+/* --------------------  third box  ----------------------------*/
+.whyus{
+ margin:0 auto; 
+    padding-left:1em;
+    padding-bottom: 7em;
+}
+.whyus caption{
+    padding:3em; 
+}
+
+   
+}
+.b3line{
+    height:0.1em;
+	width:10em;
+	background-color:darkgray;
+	margin-bottom:1em;
+    margin-top: 1em;
+}
+.whyus caption p{
+    font-size: 18px;
+    font-family: Roboto;
+    color:dimgray;
+    
+}
+table h3{
+    font-family: Corbel;
+}
+table th {
+    padding:1.5em;
+    
+}
+.ftabel{
+    font-family: Roboto light;
+    color:dimgray;
+    font-size: 14px;
+}
+
+/* --------------------  third box  ----------------------------*/
+/*--------------------------------------------SIXTH BOX --------------*/
+.thirdbox{
+	padding:4em;
+	background-color:#282829;
+    width:100%;
+}
+.box{
+	background-color:white;
+	width:21.9375em;
+	float:left;
+	margin-left:2em;
+}
+
+.boxtitle{
+	text-align:center;
+	color:#6818a5;
+	font-size:1.5em;
+}
+.boxsubtitle{
+	text-align:center;
+	font-weight:bold;
+	font-size:1em;
+}
+.boxtext{
+	text-align:center;
+	font-size:1em;
+	padding-left:2em;
+	padding-right:2em;
+}
+.button2{
+    border: solid 1px #609c9e;
+    margin-bottom: 2em;
+	padding:0.6em 1.6em;
+	background-color:#46bec2;
+	color:white;
+	font-size:1.2em;
+	text-decoration:none;
+	transition:background-color 0.5s ease, color 0.5s ease;
+}
+.button2:hover{
+    border: solid 1px #609c9e;
+	background-color:white;
+	color:#351b48;
+	transition:background-color 0.5s ease, color 0.5s ease;
+}
+/*--------------------------------------------SIXTH BOX --------------*/
+
+/*--------------------------------------------7TH BOX --------------*/
+
+
+.whyus{
+ margin:0 auto; 
+    padding-left:1em
+}
+.whyus caption{
+    padding:3em; 
+}
+
+   
+}
+.line2{
+    height:0.1em;
+	width:10em;
+	background-color:darkgray;
+	margin-bottom:1em;
+    margin-top: 1em;
+}
+.whyus caption p{
+    font-size: 18px;
+    font-family: Roboto;
+    color:dimgray;
+    
+}
+table h3{
+    font-family: Corbel;
+}
+table th {
+    padding:1.5em;
+    
+}
+.ftabel{
+    font-family: Roboto light;
+    color:dimgray;
+    font-size: 14px;
+}
+/*--------------------------------------------7TH BOX --------------*/
+/*----------------------------------------------9th box ---------------*/
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #494949;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #494949;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #494949;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #494949;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #494949;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #494949;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #494949;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #494949;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #494949;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #494949;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #494949;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #494949;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #494949;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #494949;
+}
+
+
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #96eae7;
+  color: #494949;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #96eae7;
+  color: #494949;
+}
+
+#submit {
+  width: 502px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #494949;
+}

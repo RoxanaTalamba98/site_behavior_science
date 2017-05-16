@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>dropdown menu</title>
+	<link href="index.css" type="text/css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
+        <link href="demo.css" rel="stylesheet">
+        <!-- PLUGIN INCLUSION  ------------------------------------- -->
+        <!-- css -->
+        <link href="../dist/css/introLoader.css" rel="stylesheet">
+		<!-- jQuery, Helpers and jqueryIntrLoader -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../dist/helpers/jquery.easing.1.3.js"></script>
+        <script src="../dist/helpers/spin.min.js"></script>
+        <script src="../dist/jquery.introLoader.js"></script>
+    
+    </head>
+<body>
+    <div id="element" class="introLoading"></div>
+<!------------------------------------------- Navigation Menu ---------------------------------->
+ <nav class="cf">
+    
+  
+    <ul class="topmenu">
+	
+      
+	  
+        <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;font-family:Calibri; margin-left:1em;">Login</button></li>
+      <li><a href="blog.htm">Blog</a>
+        <ul class="submenu">
+          <li><a href="recent.htm">Articole</a></li>
+          <li><a href="archive.htm">Nautati</a></li>
+        </ul>
+      </li>
+    <li><a href="index2.HTML">Sectiuni</a>
+        <ul class="submenu">
+          <li><a href="endocrinologie.HTML">Endocrinologie</a></li>
+          <li><a href="NEUROLOGIE.HTML">Neurologie</a></li>
+          <li><a href="platforma.HTML">Platforma </a></li>
+        </ul>    
+    </li>
+    <li><a href="#Home" class="current">Home</a>
+        <ul class="submenu">
+          <li><a href="#about">About           </a></li>
+          <li><a href="#howitworks">Why us     </a></li>
+          <li><a href="#OBIECTIVE">Obiective   </a></li>
+          <li><a href="#Preturi">Preturi</a></li>
+          <li><a href="#whyus">Why us</a></li>
+          <li><a href="#contactus">Contact us</a></li>
+        </ul>    
+    </li>
+	  
+    </ul>
+     <div class="b0line center"></div>
+</nav>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="materiale/scientist-with-equipment-and-science-experiments-laboratory-glassware-containing-chemical-liquid-368080166.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" class=buton3>Login</button>
+      
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<!------------------------------------------- Navigation Menu ---------------------------------->
+     
+     
+<!---------------------------------------------FIRST BOX---------------------------------------->
+<div class="imagebackground center" id="Home">
+  
+	<img class="logo center" src="materiale/titlu3'.png"/>
+	
+	<h1 class="title center">Un mod inovativ de a intelege comportamentul uman</h1>
+	
+	<div class="line center"></div>
+
+	
+
+	<a href="index2.HTML" class="button1 center">INVATA ACUM</a>
+    <div class="center" style="width:60%">
+        <p class="box1title center"> Te-ai intrebat vreodata de ce actionam in felul in care o facem?</p>
+        <p class="box2title center">De ce ne simtim atrasi de anumite persoane inca din prima clipa, iar la altele nici nu le agreem prezenta?</p>
+        <p class="box2title center"> Te-ai intrebat cum functioneaza creierul unui criminal?</p> 
+        <p class="box2title center"> De ce unii oameni sunt buni, pe cand altii nu mai tin socoteala la faptele groaznice comise?</p>
+        <p class="box2title center"> Vrei sa intelegi mai bine cine suntem noi cu adevarat si ce ne face intradevar...oameni?</p>
+        <p class="box1title center">Atunci ai venit in locul potrivit!</p>
+    </div>
+</div>
+<!---------------------------------------------FIRST BOX---------------------------------------->
+     
+     
+<!---------------------------------------------SECOND BOX---------------------------------------->
+<div class="b2div" id="about">
+    <p class="b2titlu" style="text-align:center;font-size:45px;font-family:Calibri,Verdana;">Despre noi</p>  
+    <div class="b2line" ></div>
+<p>Acest site este o platforma online dedicata pasionatilor de biologie si psihologie. Ne adresam publicului larg, unde si novicii in aceste domenii sunt bine primiti, lectiile fiind facuta in asa fel incat oricine sa inteleaga cu usurinta tainele comportamentului uman.</p>
+<table class="b2table">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="b2subtitlu"><b>Biologie</b></td>
+        <td class="b2subtitlu"><b>Psihologie</b></td>
+        <td class="b2subtitlu"><b>Neurologie</b></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="b2p">Explicam procesele care au loc in organism, precum hormonii secretati, pentru o explicatie cat mai realista</td>
+        <td class="b2p">Explicam din punct de vedere psihologic ceea ce se intampla in mintea noastra</td>
+        <td class="b2p">De asemenea, ne legam de procesele neurologice din creier si sistemul nervos, pentru a explica impulsurile noastre</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+</div>
+ <!---------------------------------------------SECOND BOX----------------------------------------> 
+
+<!---------------------------------------------THIRD BOX---------------------------------------->
+<table class="whyus" id="howitworks">
+    <caption style="padding:2em;"> 
+        <p style="font-family:Calibri; font-size:45px;color:black;">Cum <span style="color:#46bec2;">Functioneaza</span></p>
+        <div style="height:0.1em;
+	width:10em;
+	background-color:darkgray;
+	margin-bottom:3em;"></div>
+        <p style="padding:0 10em;">Credem cu tarie ca pentru a usura procesul de invatare, atentia utilizatorului trebuie sa fie cultivata prin joculete care sa-i stimuleze simturile senzorial, auditiv si vizual. Urmatoarele cuvinte cheie sunt elementele necesare pentru a oferi o experienta cat mai placuta. </p>
+    </caption>
+    
+    <tr>
+        
+       <th style="text-align: right;">
+        <img style="float:right;margin-left:2em;" src="materiale/icon3-1.png">
+           <h3>Creativitate</h3>
+           <p class="ftabel">Mintea pentru a se mentine sanatoasa trebuie sa fie constant incercata, iar noi prin joculetele create exact asta vrem sa facem, stimuland in principal creativitatea</p>
+        </th> 
+        
+       <th rowspan="3"><img src="materiale/8''.jpg"></th> 
+        
+       <th style="text-align:left;">
+           <img style="float:left;margin-right:2em;" src="materiale/icon3-4.png">
+           <h3>Suspans</h3>
+           <p class="ftabel">Suspansul este calea de a mentine curiozitatea vie a utilizatorului pe tot parcursul procesului de invatare</p>
+       </th> 
+        
+    </tr>
+    <tr>
+        <th style="text-align: right;">   
+            <img style="float:right;margin-left:2em;" src="materiale/icon3-2.png">
+            <h3>Aspectul Vizual</h3>
+            <p class="ftabel">De asemenea, un aspect placut,simplist si elegant contribuie la memorarea mai usoara a informatiilor, dar si la imbunatatirea experientei pe site</p>	
+        </th>
+        <th style="text-align: left;">
+            <img style="float:left;margin-right:2em;" src="materiale/icon3-5.png">
+            <h3>Organizarea datelor</h3>
+            <p class="ftabel">Cu cat informatia este prezentata intr-o maniera simplista si ordonata, cu atat eficienta creste</p>
+        </th>
+    </tr>
+    <tr>
+        <th style="text-align: right;">
+            <img style="float:right;margin-left:2em;" src="materiale/icon3-3.png">
+            <h3>Cercetari stiintifice</h3>
+            <p class="ftabel">In spatele fiecarui capitol, paragraf si joc, se ascund ore de studiu din surse multiple si diverse pentru a oferi o informatie cat mai reala si completa.</p>	
+        </th>
+        <th style="text-align: left;">
+            <img style="float:left;margin-right:2em;" src="materiale/icon3-6.png">
+            <h3>Adaptabil</h3>
+            <p class="ftabel">Acest site se adapteaza nevoilor si cunostintelor acumulate pana in acest moment, existand 2 pagini care ofera datele necesare pentru intelegerea joculetelor.</p>	
+        </th>
+    </tr>
+    </table>
+<!---------------------------------------------THIRD BOX---------------------------------------->
+    
+<!---------------------------------------------FOURTH BOX -------------------------------------->
+    <div id="OBIECTIVE" style="background-color:#1f1f1f;width:100%;display:table;">
+	<img src="materiale/servicerightimg'.jpg" style="height:600px;width:750px;float:right;padding-left:5em;"/>
+	<p style="font-family:Calibri; font-size:40px;color:white;padding-top:1em; text-align:right;"> Obiectivele noastre <span style="color:#e64b3c"> | </span></p>
+    <h3 style="font-family:Sans-serif;text-align:right;color:#e64b3c;">Constientizare</h3>
+    <p style="padding:0 5em;font-family:Calibri;color:white;text-align:right;">Noi credem ca primul pas in formarea oamenilor de elita este acela de a-i face constienti de raportul si felul de relatie pe care il au cu cei apropiati, pentru a-i intelege mai bine</p>
+    <h3 style="font-family:Sans-serif;text-align:right;color:#e64b3c;">Dezvoltare personala</h3>
+    <p style="padding:0 5em;font-family:Calibri;color:white;text-align:right;">Prin dezvoltarea oamenilor, acestia isi extind orizonturile, avand o alta perspectiva asupra lumii si o intelepciune mai mare, contribuind la o lume mai buna.</p>
+    <h3 style="font-family:Sans-serif;text-align:right;color:#e64b3c;">Distractie</h3>
+    <p style="padding:0 5em;font-family:Calibri;color:white;text-align:right;">De asemenea, vrem sa iti oferim o experienta placuta pe tot parcursul "calatoriei" in acest univers al cunoasterii. Pentru o eficienta maxima, am imbinat teoria cu jocul si animatiile, totul pentru a face cat mai clare lectiile abordate.</p>
+    
+</div>
+    <!---------------------------------------------FOURTH BOX -------------------------------------->
+    <!---------------------------------------------FIFTH BOX --------------------------------------->
+<div style="width:100%; background-color:#f2eeed;padding:3em 0;">
+    <p style="padding:3em auto; text-align:center;font-family:Calibri; font-size:30px;">"Medicina este ştiinţa şi conştiinţa încălzite de iubire faţă de oameni."</p>
+    <p style=" text-align:center;font-family:Calibri; font-size:20px;padding-left:30em;">Iuliu Haţieganu</p>
+</div>
+    <!--------------------------------------------FIFTH BOX ---------------------------------------->
+    
+    <!--------------------------------------------SIXTH BOX ---------------------------------------->
+<div class="thirdbox center" id="Preturi">
+    <h1 style="color:white;text-align:center;padding-bottom:2em;">Preturile noastre</h1> 
+
+    <p style="color:white;text-align:center;padding-bottom:1em;">Intrucat aceasta platforma detine informatii pretioase, colectate cu multa grija si apoi organizate si transpuse sub forma unor jocuri interactive, pentru a le accesa pe toate trebuie sa va logati si sa va faceti un abonament lunar in functie de preferinte</p>
+	
+<br>
+        <div class="center" style="padding-top:3em;padding-bottom:4em;">
+	       <div class="box" style="margin-bottom:3em;">
+		      <img src="materiale/12'.jpg" />
+		      <p class="boxtitle">BASIC </p>
+		      <div class="line2"></div>
+		      <p class="boxsubtitle">Gratuit</p>
+		      <p class="boxtext">Ai acces la informatiile de pe cele 2 pagini despre care se vorbeste in "sectiuni", si poti incerca un singur joc educativ</p>
+               <a href="" class="button2 center">SELECTEAZA</a>
+	       </div>
+
+	       <div class="box">
+		      <img src="materiale/6'.jpg" />
+		      <p class="boxtitle">POPULAR</p>
+		      <div class="line2"></div>
+		      <p class="boxsubtitle">20lei/luna</p>
+		      <p class="boxtext">Ai acces la toate informatiile si jocurile de pe site. Astfel, experienta devine mai placuta si inveti mai usor.</p>
+               <a href="" class="button2 center">SELECTEAZA</a>
+	       </div>
+
+	       <div class="box">
+		      <img src="materiale/4'.jpg" />
+		      <p class="boxtitle">ULTRA</p>
+               <div class="line2"></div>
+               <p class="boxsubtitle">60lei/luna</p>
+               <p class="boxtext">Pe langa accesul la toate informatiile si jocurile de pe site, poti oricand sa primesti informatii suplimentare si explicatii de la specialistii nostri.</p>
+               <a href="" class="button2 center">SELECTEAZA</a>
+	       </div>
+        </div>
+</div>
+
+     <!--------------------------------------------SIXTH BOX ---------------------------------------->
+    
+    
+    <!-------------------------------------------- SEVENTH BOX ---------------------------------------->
+    <table class="whyus" id="whyus">
+    <caption style="padding:2em;"> 
+        <p style="font-family:Calibri; font-size:45px;color:black;">De ce <span style="color:#46bec2;">Noi?</span></p>
+        <div class="line2"></div>
+        <p style="padding:0 10em;">Pentru ca tot efortul nostru pentru a-i ajuta pe ceilalti este facut din inima si din pasiune, fiind o munca neincetata pentru a avea cel mai bun rezultat posibil</p>
+    </caption>
+    
+    <tr>
+        <!-------ICON 1---------->
+         <th style="text-align: right;">
+           <h3>Ai intrebari?</h3>
+           <p class="ftabel">Ne poti trimite mesaj in orice zi, la orice ora. Noi suntem aici sa te ajutam!</p>
+            
+        </th>
+        <th style="text-align: right;">
+           <img style="float:right;margin-left:2em;" src="materiale/icon7-1.png">
+        </th>
+        
+       <th rowspan="3"><img src="materiale/8'.jpg"></th>
+        
+        <!-------ICON 2---------->
+        <th style="text-align: left;">
+            <img style="float:left;margin-right:2em;" src="materiale/icon7-4.png">
+        </th>
+        <th style="text-align:left;">
+           <h3>Experimente</h3>
+           <p class="ftabel">Cu jocurile pe care ti le punem la dispozitie, ai ocazia sa faci experimente pentru a vedea in ce situatii se comporta omul intr-un anume fel</p>
+        </th>
+    </tr>
+    <tr>
+        <!-------ICON 3---------->
+        <th style="text-align: right;">
+           <h3>Utilitatea</h3>
+           <p class="ftabel">De indata ce vei parcurge jocurile noastre, vei putea aplica instant informatiile acumulate in viata reala</p>
+        </th>
+        <th style="text-align: right;">
+            <img style="float:right;margin-left:2em;" src="materiale/icon7-2.png">
+        </th> 
+        <!-------ICON 4---------->
+        <th style="text-align: left;">
+            <img style="float:left;margin-right:2em;" src="materiale/icon7-5.png">
+        </th>
+        <th style="text-align: left;">
+           <h3>Responsive</h3>
+           <p class="ftabel">In curand, o sa poti accesa toate jocurile si pe telefon!</p>
+        </th> 
+    </tr>
+    <tr>
+        <!-------ICON 5---------->
+        <th style="text-align: right;">
+           <h3>Quizzuri</h3>
+           <p class="ftabel">Aici poti sa iti testezi informatiile dobandite prin quizzuri care iti vor spune unde si ce ai gresit!</p>
+        
+        </th>
+        <th style="text-align: right;">
+<img style="float:right;margin-left:2em;" src="materiale/icon7-3.png">
+
+        </th>
+        <!-------ICON 6---------->
+        <th style="text-align:left;">
+            <img style="float:left;margin-right:2em;" src="materiale/icon7-6.png">
+        </th>
+        <th style="text-align:left;">
+           <h3>Diplome</h3>
+           <p class="ftabel">In urma parcurgerii in totalitate a platformei educationale si a quizzurilor,daca ai obtinut la toate peste 7., vei primi o diploma de la noi. </p>
+        </th>
+    </tr>
+    </table>
+        <!-------------------------------------------- SEVENTH BOX ---------------------------------------->
+        <!-------------------------------------------- 8TH BOX ---------------------------------------->
+    <div style="background-color:#e3f4f7;padding:2em 0;">
+    <p class="center" style="font-family:Calibri; font-size:45px;color:black;">Incepe <span style="color:#46bec2;">CHIAR ACUM</span></p>
+        <div class="line2"></div>
+        <p style="padding:3em 10em; text-align:center;">Ce mai astepti
+? Acum e ocazia ta de a invata ce se ascunde in spatele comportamentului uman si de a avea o viata mai implinita!</p>
+    <a href="index2.HTML" class="button2 center">Incepe acum</a>
+        <!-------------------------------------------- 8TH BOX ---------------------------------------->
+    </div>
+    <!-------------------------------------------- 9TH BOX ---------------------------------------->
+    <div style="padding:2em 0;" id="contactus">
+        <p class="center" style="font-family:Calibri; font-size:30px;color:black;padding:1em;">Ai o intrebare? <span style="color:#46bec2;"></span></p>
+        <p class="center" style="font-family:Calibri; font-size:45px;color:black;">Suntem <span style="color:#46bec2;">AICI</span></p>
+        <form id="form" class="topBefore">
+		
+		  <input id="name" type="text" placeholder="NAME">
+		  <input id="email" type="text" placeholder="E-MAIL">
+		  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+  <input id="submit" type="submit" value="GO!">
+  
+        </form>
+     </div>
+        <!-------------------------------------------- 10TH BOX ---------------------------------------->
+ <table class="iconite" style="width:100%; background-color:black";>
+    <tr>
+        <td style="padding-left:6em;"></td>
+    <td style="padding-top:3em;"><img src="materiale/icon-1.gif"></td>
+    <td style="padding-top:3em;"><img src="materiale/icon-2.gif"></td> 
+    <td style="padding-top:3em;"><img src="materiale/icon-3.gif"></td>
+    <td style="padding-top:3em;"><img src="materiale/icon-4.gif"></td>
+        <td></td>
+       
+  </tr>
+  <tr>
+      <td style="padding-left:4em;"></td>
+    <td style="padding-bottom:3em; color:white;"><h3>Inovatie</h3></td>
+    <td style="padding-bottom:3em; color:white;"><h3>Inspiratie</h3></td>
+    <td style="padding-bottom:3em; color:white;"><h3>Inteligenta</h3></td>
+      <td style="padding-bottom:3em; color:white;"><h3>Educatie</h3></td>
+      <td></td>
+  </tr>
+  </table> 
+   <!-- <audio src="materiale/backgraundmusic.mp3" autoplay controls loop>
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio> -->
+<script>
+			$(document).on('ready', function() {
+				$("#element").introLoader({
+                    animation: {
+                        name: 'lettersLoader',
+                        options: {
+                            ease: "easeInOutCirc",
+                            style: 'ocean',
+                            delayBefore: 500,
+                            delayAfter: 0,
+                            exitTime: 300,
+                            loaderText: 'Bine ati venit!', 
+                            lettersDelayTime: 0
+                        }
+                    },
+                    spinJs: {
+                        lines: 13, // The number of lines to draw
+                        length: 20, // The length of each line
+                        radius: 30, // The radius of the inner circle
+                        width: 10, // The line thickness
+                        color: '#333' // #rgb or #rrggbb or array of colors
+                    }
+                });
+			});
+		</script>
+</body>
+</html>

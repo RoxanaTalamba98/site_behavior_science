@@ -1,0 +1,424 @@
+html, body{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	font-family:Verdana,Arial,sans-serif;
+}
+.center{
+	display:table;
+	margin:0 auto;
+}
+/* --------------------- navigation ---------------------------*/
+.cf:before, .cf:after {
+	content:"";
+	display:table;
+}
+
+.cf:after {
+	clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+	zoom:1;
+}
+/*horizontal menu styles*/	
+nav {
+     
+	background: #fcb128;
+	height: 2.4em;
+}
+.b0line{
+	height:0.3em;
+	width:100%;
+	background-color:#fcb128;
+    margin:0;
+}
+nav ul, li {
+    
+	margin: 0;
+	padding: 0;
+    padding-bottom:0.4em;
+    padding-top:0.2em;
+	list-style: none;
+	float: right;
+}
+nav ul {
+    padding-right: 3em;
+	background: #333;
+	height: 2.5em;
+	width: 100%;
+    position: fixed;
+}
+nav li {
+	position: relative;
+    
+}
+nav li a {
+	display: block;
+	line-height: 2em;
+	padding: 0 1.5em;
+	color: white;
+	text-decoration: none;
+    font-size: 1.1em;
+}
+nav li a:hover, .topmenu li:hover > a {
+	background: #fcb128;
+	height: 2.1em;
+	padding-top: .4em;
+	position: relative;
+	top: -.4em;
+	border-radius: .2em .2em 0 0;
+    transition:background-color 0.3s ease;
+    
+}
+nav .current, a:hover.current, .topmenu li:hover a.current {
+	background: #6b6b6b;
+	color: #eee;
+	padding-top: .4em;
+	border-radius: .3em .3em 0 0;
+	position: relative;
+	top: -.3em;
+	border-bottom: .3em solid #fcb128;
+	cursor: default;
+    transition:background-color 0.5s ease;
+}
+/*dropdown menu styles*/
+nav ul.submenu {
+	float: none;
+	background: #fcb128;
+	
+	height: auto;
+	position: absolute;
+	top: 2.5em;
+	left: -9000em;
+	max-height: 0;
+	-moz-transition:max-height 1s ease-in-out;
+	-webkit-transition:max-height 1s ease-in-out;
+	-o-transition:max-height 1s ease-in-out;
+	transition:max-height 1s ease-in-out;
+	overflow: hidden;
+    
+}
+nav ul.submenu li {
+	float: none;
+    width: 8em;
+    margin: 0;
+}
+nav .topmenu li:hover ul {
+	left: 0;
+	max-height: 30em;
+}
+nav ul.submenu li a {
+	border-bottom: 1px solid white;
+    border-width:
+	padding: .2em 1em;
+	white-space: nowrap;
+ 
+}
+nav ul.submenu li:last-child a {
+	border-bottom: none;
+}
+nav ul.submenu li a:hover {
+	background: #fcb128;
+	height: 3em;
+	padding-top: 0em;
+	top: 0;
+	border-radius: 0;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 7px 19px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family:Calibri;
+    font-size: 1.2em;
+    margin-right: 1em;
+}
+.buton3{
+   background-color: #46bec2;
+    color: white;
+    margin-top: 1em;
+    padding: 13px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family:Calibri;
+    font-size: 1.2em;
+    
+}
+
+button:hover {
+    background-color: #35a9ad;
+    transition:background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 20%;
+}
+
+.container {
+    padding: 5em;
+}
+
+span.psw {
+    float: right;
+    padding-top: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+/* --------------------- navigation ---------------------------*/
+/* --------------------  first box  ----------------------------*/
+
+.imagebackground{
+background:url(materiale/fundal%2022.jpg);
+vertical-align: top 
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center; 
+background-size: cover;
+width:100%;
+height:100%;  
+}
+
+.imagebackground p{
+    font-family:Calibri; font-size:45px;color:white;
+    text-align: right;
+    padding-right: 4em;
+    padding-top: 1.2em;
+}
+.imagebackground div{
+    width:35em;
+    float:right;
+}
+.imagebackground div p{
+    font-size:25px;
+    padding-right: 4em;
+    text-align: center;
+}
+/* --------------------  first box  ----------------------------*/
+
+/* --------------------  second box  ----------------------------*/
+.b2div{
+    margin:0 auto;
+    background-color:#fcb128;
+    padding-bottom: 5em;
+    
+    
+}
+.b2titlu{
+    margin:0 auto;
+    font-size: 40px;
+    font-family:Calibri,Verdana,Bell Mt, Roboto;
+    color:white;
+    text-align:center;
+}
+
+.b2div p{
+    padding: 0em 12.5em;
+    padding-top:2em;
+   font-size: 22px;
+    font-family: Bariol,Roboto;
+    color:white;
+    text-align: justify;
+}
+
+.b2line{
+    height:0.2em;
+	width:10em;
+	background-color:white;
+	margin:1em auto;
+}
+.b3line{
+    height:0.2em;
+	width:10em;
+	background-color:black;
+	margin:1em auto;
+}
+
+    
+.b2p{
+    padding-bottom: 5em;
+}
+
+/* --------------------  second box  ----------------------------*/
+
+
+/*--------------------------------------------SIXTH BOX --------------*/
+.thirdbox{
+	padding-top:6em;
+    padding-bottom: 20em;
+	background-color:#282829;
+    margin:0 auto;
+}
+button.accordion {
+    font-family:Calibri;
+    display:table;
+	margin:0 auto;
+    background-color: #f9f9f9;
+    color: #fcb128;
+    cursor: pointer;
+    padding: 18px;
+    width: 70%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2em;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #fcb128;
+    color:white;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    
+	margin:0 auto;
+    width: 67.3%;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.buton2{
+    margin-bottom: 2em;
+	padding:0.6em 1.6em;
+	background-color:#fcb128;
+	color:white;
+	font-size:1.2em;
+	text-decoration:none;
+	transition:background-color 0.5s ease, color 0.5s ease;
+}
+.buton2:hover{
+	background-color:white;
+	color:#fcb128;
+	transition:background-color 0.5s ease, color 0.5s ease;   
+}
+.vertical-menu {
+    width: 100%;
+    height: 20em;
+    overflow-y: auto;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;}
+/*--------------------------------------------SIXTH BOX --------------*/

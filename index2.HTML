@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>dropdown menu</title>
+	<link href="index2.css" type="text/css" rel="stylesheet" />
+    
+</head>
+<body>
+    
+<!------------------------------------------- Navigation Menu ---------------------------------->
+ <nav class="cf">
+    
+  
+    <ul class="topmenu">
+	
+      
+	  
+        <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;font-family:Calibri;margin-left:1em">Login</button></li>
+      <li><a href="blog.htm">Blog</a>
+        <ul class="submenu">
+          <li><a href="recent.htm">Articole</a></li>
+          <li><a href="archive.htm">Noutati</a></li>
+        </ul>
+      </li>
+    <li><a href="index2.HTML" class="current">Sectiuni</a>
+        <ul class="submenu">
+          <li><a href="endocrinologie.HTML">Endocrinologie</a></li>
+          <li><a href="NEUROLOGIE.HTML">Neurologie</a></li>
+          <li><a href="platforma.HTML">Platforma</a></li>
+        </ul>    
+    </li>
+    <li><a href="index.HTML" >Home</a>
+        <ul class="submenu">
+          <li><a href="#about">About           </a></li>
+          <li><a href="#howitworks">Why us     </a></li>
+          <li><a href="#OBIECTIVE">Obiective   </a></li>
+          <li><a href="#Preturi">Preturi</a></li>
+          <li><a href="#whyus">Why us</a></li>
+          <li><a href="#contactus">Contact us</a></li>
+        </ul>    
+    </li>
+	  
+    </ul>
+     <div class="b0line center"></div>
+</nav>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="materiale/scientist-with-equipment-and-science-experiments-laboratory-glassware-containing-chemical-liquid-368080166.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" class=buton3>Login</button>
+      
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<!------------------------------------------- Navigation Menu ---------------------------------->
+     
+     
+     
+<!---------------------------------------------FIRST BOX---------------------------------------->
+    <div class="imagebackground center" id="Home">
+        <p>Pregatit sa<span style="color:#fcb128;"> inveti?</span></p>
+        <div style="content-align:center;"><p>Mintea umana este un univers magnific care asteapta doar sa fie inteles. Acum acest lucru este posibil cu noi!</p>
+        <a style="float:right; margin: 5em 13em 0 0;" href="#about" class="buton2 ">Alege-ti planul</a></div>
+    </div>
+    
+    <!---------------------------------------------SECOND BOX---------------------------------------->
+<div class="b2div" id="about">
+    <p class="b2titlu" style="text-align:center;font-size:45px;font-family:Calibri,Verdana;">Cum sa alegi</p>  
+    <div class="b2line" ></div>
+<p>In pagina de fata aveti posibilitatea de a va alege 3 sectiuni de invatare pentru a intelege atat din perspectiva cum functioneaza comportamentul uman, cat si de a lua in detaliu informatiile care construiesc impreuna toata complexitatea firii umane. Noi va recomandam sa treceti intai prin primele doua (teorie) si apoi sa mergeti la a treia, care este platforma propriu-zisa cu jocuri si quizzuri.</p>
+</div>
+ <!---------------------------------------------SECOND BOX----------------------------------------> 
+
+    
+    <!--------------------------------------------THIRD BOX ---------------------------------------->
+    
+    <div class="thirdbox" id="SpecialGuest">
+        <p class="b2titlu" style="color:white;text-align:center;font-size:45px;font-family:Calibri,Verdana;">Sectiuni</p> 
+        <div style="background-color:white; height:0.15em;"class="b2line" ></div> <br>
+        <p style="color:white;display:table;margin:2em auto;width:70%;" >Aici gasiti cele 3 sectiuni de unde veti invata secretele comportamentului uman in propriul dumneavoastra ritm, intr-un mod interactiv si placut. </p>
+        
+        <button class="accordion"><strong>Endocrinologie</strong></button>
+        <div class="panel">
+            <p>Accesand aceasta pagina, veti intelege mai multe despre cum functioneaza corpul dumneavoastra.</p>
+            <div class="vertical-menu">
+              <a href="endocrinologie.HTML" class="active">Catre pagina de endocrinologie</a>
+              <a href="#">Introducere</a>
+              <a href="#">Fabrici de hormoni</a>
+              <a href="#">Mesageri chimici</a>
+              <a href="#">Cum functioneaza?</a>
+              <a href="#">Activitatea hormonilor</a>
+              <a href="#">Glandele Endocrine</a>
+              <a href="#">Top 20 hormoni </a>
+            </div>
+            <br>
+        </div>
+
+        <button class="accordion"><strong>Neurologie</strong></button>
+        <div class="panel">
+          <p>Aici invatati despre cum functioneaza creierul dumneavoastra si cum este alcatuit.</p>
+            <div class="vertical-menu">
+        <a href="NEUROLOGIE.HTML" class="active">Catre pagina de neurologie</a>
+              <a href="#">Introducere</a>
+              <a href="#">Anatomia creierului</a>
+              <a href="#">Celule si tesuturi</a>
+              <a href="#">Principalele structuri ale creierului</a>
+              <a href="#">Totul despre neurotransmitatori</a>
+            </div>
+            <br>
+        </div>
+
+        <button class="accordion"><strong>Platforma de studiu al comportamentului uman</strong></button>
+        <div class="panel">
+          <p> Pe aceasta pagina o sa gasiti saptamanal cate un nou joc explicativ al comportamentulului uman.Daca nu stiti ce inseamna niste termeni, va invitam sa incercati apoi pagina de endocrinologie sau neurologie. Va uram distractie placuta!</p>
+            <div class="vertical-menu">
+              <a href="platforma.HTML" class="active">Catre platforma</a>
+              <a href="#">Introducere</a>
+              <a href="#">Stiinta din spatele iubirii</a>
+
+            </div>
+            <br>
+        </div>
+ 
+
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].onclick = function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          }
+        }
+        </script>  
+    </div>
+         <table class="iconite" style="width:100%; background-color:black";>
+    <tr>
+    <td style="padding-left:4em;"></td>
+    <td style="padding-top:3em;"><img src="materiale/icon-1.gif"></td>
+    <td style="padding-top:3em;"><img src="materiale/icon-2.gif"></td> 
+    <td style="padding-top:3em;"><img src="materiale/icon-3.gif"></td>
+    <td style="padding-top:3em;"><img src="materiale/icon-4.gif"></td>
+        <td></td>
+       
+  </tr>
+  <tr>
+      <td style="padding-left:4em;"></td>
+    <td style="padding-bottom:3em; color:white;"><h3>Inovatie</h3></td>
+    <td style="padding-bottom:3em; color:white;"><h3>Inspiratie</h3></td>
+    <td style="padding-bottom:3em; color:white;"><h3>Inteligenta</h3></td>
+      <td style="padding-bottom:3em; color:white;"><h3>Educatie</h3></td>
+      <td></td>
+  </tr>
+  </table>
+    </body>
+</html>
+     <!--------------------------------------------THIRD BOX ---------------------------------------->
